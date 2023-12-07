@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color: darkgoldenrod;
+           
+        }
+        h1{
+            color: aqua;
+            text-align: center;
+            margin: auto;
+            align-items: center;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #image-slider{
+           width: 48.5%;
+            margin: auto;
+            margin-top: 40px;
+            display: flex;
+           overflow-x: scroll;
+           transition: transform 0.3s;
+         
+        }
+    #image-slider::-webkit-scrollbar{
+        display: none;
+    }
+    img{
+        width: 750px;
+        height: 450px;
+        
+    }
+    #buttons{
+        margin: auto;
+        margin-top: 50px;
+        width: 25%;
+        word-spacing: 40px;
+    }
+    button{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 12px;
+        cursor: pointer;
+        border: none;
+    }
+    .red{
+        background-color: red;
+        color: white;
+    }
+    .purple{
+        background-color: purple;
+        color: white;
+    }
+    .orange{
+        background-color:orange;
+        color: white;
+    }
+    button:hover{
+        background-color: black;
+        color: brown;
+    }
+
+    </style>
+</head>
+
+<body>
+    <h1>IMAGE SLIDERS</h1>
+    <div id="image-slider">
+        <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg" alt="">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/025/284/015/small_2x/close-up-growing-beautiful-forest-in-glass-ball-and-flying-butterflies-in-nature-outdoors-spring-season-concept-generative-ai-photo.jpg" alt="">
+        <img src="https://thumbs.dreamstime.com/z/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg" alt="">
+        <img src="https://thumbs.dreamstime.com/b/spring-summer-season-abstract-nature-background-grass-blue-sky-back-49716369.jpg" alt="">
+        <img src="https://thumbs.dreamstime.com/b/concept-open-magic-book-pages-water-land-small-child-fantasy-nature-learning-copy-space-166401875.jpg" alt="">
+        <img src="https://thumbs.dreamstime.com/b/heart-nature-25446913.jpg" alt="">
+        <img src="https://thumbs.dreamstime.com/b/beautiful-nature-landscape-patagonia-argentina-22777633.jpg" alt="">
+        <img src="https://thumbs.dreamstime.com/b/river-summer-nature-9295806.jpg" alt="">
+        <img src="https://thumbs.dreamstime.com/b/nature-panorama-mountain-landscape-sunset-norway-44518447.jpg?w=1600" alt="">
+        <img src="https://thumbs.dreamstime.com/b/mother-child-girl-winter-walk-nature-happy-family-63258053.jpg" alt="">
+        <img src="https://thumbs.dreamstime.com/b/blue-butterflies-nature-bulk-background-life-blue-butterflies-nature-105345060.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_1280.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2013/07/19/00/18/splashing-165192_640.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2017/06/22/20/24/dewdrops-2432391_640.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2016/04/18/22/05/seashells-1337565_640.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/01/mountains-736886_640.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_640.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2012/12/14/11/36/leaves-69999_640.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2017/05/08/13/15/spring-bird-2295434_640.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2018/01/12/14/24/night-3078326_640.jpg" alt="">
+    </div>
+    <div id="buttons">
+    <button class="red" onclick="startBtn()">Start</button>
+    <button class="purple" onclick="backBtn()">Previous</button>
+    <button class="orange" onclick="nextBtn()">Next</button>
+</div>
+    
+</body>
+<script src="slider.js"></script>
+</html>
