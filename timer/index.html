@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(0,0,0,0.4);
+            
+
+        }
+        h1{
+            color: aquamarine;
+            font-size: 50px;
+
+        }
+        button{
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: darkolivegreen;
+
+        }
+        .green{
+            background-color: green;
+            color: white;
+        }
+        .purple{
+            background-color: purple;
+            color: white;
+        }
+        .orange{
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1> TIMER</h1>
+    <div>
+        <label>Hours: </label>
+        <input type="number" value="0" id="hours">
+        <label>Minutes: </label>
+        <input type="number" id="min" value="0" >
+        <label>Seconds: </label>
+        <input type="number" id="sec" value="0" >
+    </div><br>
+    <div>
+        <button class="green" onclick="startTimer()">Start</button>
+        <button class="purple" onclick="stopTimer()">Stop</button>
+        <button class="orange" onclick="resetTimer()">Reset</button>
+    </div>
+</body>
+</html>
+<script src="./timer.js"></script>
